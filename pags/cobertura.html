@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en" data-find="_13">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Soluciones Avanzadas Informáticas y Telecomunicaciones SAITEL, es una empresa que fue creada con el fin principal de brindar a la colectividad el servicio de Internet.">
+        <meta name="author" content="Romero Giovanni - 0987868133">
+        <link rel="shortcut icon" href="images/favicon.ico">
+
+        <title>Saitel-Internet Wireless para todo el Ecuador</title>
+        <link rel="stylesheet" href="../css/uikit.min.css" />
+        <link rel="stylesheet" href="../css/components/slideshow.css" />
+        <link rel="stylesheet" href="../css/components/slidenav.css" />
+        <link rel="stylesheet" href="../css/components/dotnav.gradient.css" />
+        <link rel="stylesheet" href="../vendor/highlight/highlight.css" />
+
+        <script src="../js/jquery.js"></script>
+        <script src="../js/uikit.js"></script>
+        <script src="../js/uikit.min.js"></script>
+        <script src="../js/components/slideshow.js"></script>
+        <script src="../js/components/slideshow-fx.js"></script>
+        <script src="../js/core/grid.min.js"></script>
+        <script src="../js/core/grid.js"></script>
+        <script src="../vendor/highlight/highlight.js"></script>
+        <script async src="//www.google-analytics.com/analytics.js"></script>
+
+        <!--Script de Facebook-->
+        <script>(function(d, s, id) {
+              var js, fjs = d.getElementsByTagName(s)[0];
+              if (d.getElementById(id)) return;
+              js = d.createElement(s); js.id = id;
+              js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.4";
+              fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <!--scrip de GOOGLE-->
+        <script type='text/javascript' src="http://maps.googleapis.com/maps/api/js"></script>
+        <script>
+            var centerMatriz=new google.maps.LatLng(0.353139,-78.119018);
+            var centerSacha=new google.maps.LatLng(-0.298687,-76.854615);
+            var centerTulcan=new google.maps.LatLng(0.804469,-77.724254);
+            var centerChone=new google.maps.LatLng(-0.697523,-80.091043);
+            var centerCayambe=new google.maps.LatLng(0.029375,-78.145921);
+            var centerCarapungo=new google.maps.LatLng(-0.094872,-78.455111);
+
+            function initialize()
+            {
+            var mapProp = {
+              center:centerMatriz,
+              zoom:7,
+              mapTypeId:google.maps.MapTypeId.ROADMAP
+              };
+
+            var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+            var markerMatriz=new google.maps.Circle({
+              center:centerMatriz,
+              radius:23000,
+              strokeColor:"#0000FF",
+              strokeOpacity:0.8,
+              strokeWeight:2,
+              fillColor:"#0000FF",
+              fillOpacity:0.4
+              });
+
+            var markerSacha=new google.maps.Circle({
+              center:centerSacha,
+              radius:23000,
+              strokeColor:"#0000FF",
+              strokeOpacity:0.8,
+              strokeWeight:2,
+              fillColor:"#0000FF",
+              fillOpacity:0.4
+              });
+            var markerTulcan=new google.maps.Circle({
+              center:centerTulcan,
+              radius:23000,
+              strokeColor:"#0000FF",
+              strokeOpacity:0.8,
+              strokeWeight:2,
+              fillColor:"#0000FF",
+              fillOpacity:0.4
+              });
+            var markerChone=new google.maps.Circle({
+              center:centerChone,
+              radius:23000,
+              strokeColor:"#0000FF",
+              strokeOpacity:0.8,
+              strokeWeight:2,
+              fillColor:"#0000FF",
+              fillOpacity:0.4
+              });
+            var markerCayambe=new google.maps.Circle({
+              center:centerCayambe,
+              radius:23000,
+              strokeColor:"#0000FF",
+              strokeOpacity:0.8,
+              strokeWeight:2,
+              fillColor:"#0000FF",
+              fillOpacity:0.4
+              });
+            var markerCarapungo=new google.maps.Circle({
+              center:centerCarapungo,
+              radius:23000,
+              strokeColor:"#0000FF",
+              strokeOpacity:0.8,
+              strokeWeight:2,
+              fillColor:"#0000FF",
+              fillOpacity:0.4
+              });
+
+            markerMatriz.setMap(map);
+            markerSacha.setMap(map);
+            markerTulcan.setMap(map);
+            markerChone.setMap(map);
+            markerCayambe.setMap(map);
+            markerCarapungo.setMap(map);
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+        </script>
+
+
+    </head>
+    <body data-find="_12" style="background-color: rgb(230, 230, 230);">
+        <div id="fb-root"></div>
+        <!--NAV-->
+        <nav class='uk-navbar uk-navbar-attached'>
+            <div id="my-id" class='uk-container uk-container-center'>
+                <a href="../index.html" class='uk-navbar-brand uk-hidden-small'>
+                    <img class='uk-margin uk-margin-remove' src="../images/logosfondo.png" width="100" height="40" title="Saitel" alt="Saitel">
+                </a>
+                <ul class="uk-tab">
+                    <li data-uk-dropdown="{mode:'hover',justify:'#my-id'}"  aria-expanded="true" aria-haspopup="true">
+                        <!-- This is the menu item toggling the dropdown -->
+                        <a href="#"> Planes y Servicios
+                            <i class="uk-icon-hover  uk-icon-laptop"></i>
+                        </a>
+                        <!-- This is the dropdown -->
+                        <div class="uk-dropdown uk-dropdown-navbar">
+                            <ul class="uk-subnav uk-subnav-line">
+                                <div class="uk-grid uk-container-center" data-uk-grid-margin>
+                                    <div class="uk-flex uk-flex-column">
+                                    <div class="uk-grid uk-width-medium-1-1">
+                                        <div class="uk-width-medium-1-5" style='text-align: center;'>
+                                            <div class="uk-panel uk-panel-box">
+                                                <li>
+                                                    <a href="escojeTuPlan.html" class="uk-icon-hover uk-icon-large uk-icon-cart-plus"></a>
+                                                    <br>Escoje tu mejor Plan
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-5" style='text-align: center;'>
+                                            <div class="uk-panel uk-panel-box">
+                                                <li>
+                                                    <a href="planesHogar.html" class="uk-icon-hover uk-icon-large uk-icon-laptop"></a>
+                                                    <br>Planes Residenciales
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-5" style='text-align: center;'>
+                                            <div class="uk-panel uk-panel-box">
+                                                <li>
+                                                    <a href="planesSmall.html" class="uk-icon-hover uk-icon-large uk-icon-group"></a>
+                                                    <br>Planes Small
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-5" style='text-align: center;'>
+                                            <div class="uk-panel uk-panel-box">
+                                                <li>
+                                                    <a href="planesEmpresa.html" class="uk-icon-hover uk-icon-large uk-icon-suitcase"></a>
+                                                    <br>Planes Corporativos
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-5" style='text-align: center;'>
+                                            <div class="uk-panel uk-panel-box">
+                                                <li>
+                                                    <a href="planesFibra.html" class="uk-icon-hover uk-icon-large uk-icon-server"></a>
+                                                    <br>Fibra
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="uk-grid uk-width-medium-1-1">
+                                        <div class="uk-width-medium-1-4" style='text-align: center;'>
+                                            <div class="uk-panel uk-panel-box">
+                                                <li>
+                                                    <a href="medidorVelocidad.html" class="uk-icon-hover uk-icon-large uk-icon-dashboard"></a>
+                                                    <br>Medidor de Velocidad
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4" style='text-align: center;'>
+                                            <div class="uk-panel uk-panel-box">
+                                                <li><a href="facturaElectronica/index.php" class="uk-icon-hover uk-icon-large uk-icon-barcode"></a>
+                                                    <br>Factura Electrónica
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4" style='text-align: center;'>
+                                            <div class="uk-panel uk-panel-box">
+                                                <li>
+                                                    <a href="planillas.html" class="uk-icon-hover uk-icon-large uk-icon-qrcode"></a>
+                                                    <br>Planillas
+                                                </li>
+                                            </div>
+                                        </div>
+                                        <div class="uk-width-medium-1-4" style='text-align: center;'>
+                                            <div class="uk-panel uk-panel-box">
+                                                <li>
+                                                    <a href="formasPago.html" class="uk-icon-hover uk-icon-large uk-icon-money"></a>
+                                                    <br>Formas de Pago
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li data-uk-dropdown="{mode:'hover',justify:'#my-id'}"  aria-expanded="true" aria-haspopup="true">
+                        <!-- This is the menu item toggling the dropdown -->
+                        <a href="#"> Empresa
+                            <i class="uk-icon-hover  uk-icon-gears"></i>
+                        </a>
+                        <!-- This is the dropdown -->
+                        <div class="uk-dropdown uk-dropdown-navbar">
+                            <ul class="uk-subnav uk-subnav-line">
+                                <div class="uk-grid uk-container-center" data-uk-grid-margin>
+                                    <div class="uk-flex uk-flex-column">
+                                        <div class="uk-grid uk-width-medium-1-1">
+                                            <div class="uk-width-medium-1-6" style='text-align: center;'>
+                                                <div class="uk-panel uk-panel-box">
+                                                    <li>
+                                                        <a href="sucursales.html" class="uk-icon-hover uk-icon-large uk-icon-sitemap"></a>
+                                                        <br>Sucursales
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-medium-1-6" style='text-align: center;'>
+                                                <div class="uk-panel uk-panel-box">
+                                                    <li>
+                                                        <a href="empresa.html" class="uk-icon-hover uk-icon-large uk-icon-tasks"></a>
+                                                        <br>Antecedentes
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-medium-1-6" style='text-align: center;'>
+                                                <div class="uk-panel uk-panel-box">
+                                                    <li>
+                                                        <a href="empresa.html#mision" class="uk-icon-hover uk-icon-large uk-icon-check-square-o"></a>
+                                                        <br>Mision
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-medium-1-6" style='text-align: center;'>
+                                                <div class="uk-panel uk-panel-box">
+                                                    <li>
+                                                        <a href="empresa.html#vision" class="uk-icon-hover uk-icon-large uk-icon-cloud"></a>
+                                                        <br>Vision
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-medium-1-6" style='text-align: center;'>
+                                                <div class="uk-panel uk-panel-box">
+                                                    <li>
+                                                        <a href="empresa.html#objetivos" class="uk-icon-hover uk-icon-large uk-icon-line-chart"></a>
+                                                        <br>Objetivos
+                                                    </li>
+                                                </div>
+                                            </div>
+                                            <div class="uk-width-medium-1-6" style='text-align: center;'>
+                                                <div class="uk-panel uk-panel-box">
+                                                    <li>
+                                                        <a href="Directivos.html" class="uk-icon-hover uk-icon-large uk-icon-male"></a>
+                                                        <a href="directivos.html" class="uk-icon-hover uk-icon-large uk-icon-male"></a>
+                                                        <br>Directivos
+                                                    </li>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ul>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="dondeEstamos.html"> Donde Estamos
+                            <i class="uk-icon-hover uk-icon-street-view"></i>
+                        </a>
+                    </li>
+                    <li class="uk-active">
+                        <a href="cobertura.html"> Cobertura
+                            <i class="uk-icon-hover uk-icon-flag"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="contactos.html"> Contactos
+                            <i class="uk-icon-hover uk-icon-users"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="seguridad.html"> Seguridad
+                            <i class="uk-icon-hover uk-icon-key"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="tm-middle" data-find="_11">
+            <!--SLIDER-->
+            <div class="uk-slidenav-position" data-uk-slideshow="{autoplay:true,animation:'scroll'}">
+                <ul class="uk-slideshow">
+                    <li class="uk-overlay uk-overlay-hover">
+                        <img src="../images/bn1.png" style="width: 20%; height: 10px;">
+                        <a href="www.saitel.ec">
+                            <figcaption style="text-align: right;" class="uk-overlay-panel uk-overlay-background uk-overlay-top uk-overlay-slide-top">
+                                <button class="uk-button uk-button-primary"><i class="uk-icon-laptop"> MAS INFORMACIÓN</i></button>
+                            </figcaption>
+                        </a>
+                    </li>
+                    <li class="uk-overlay uk-overlay-hover">
+                        <img src="../images/bn2.png" style="width: 20%; height: 10px;">
+                        <a href="www.saitel.ec">
+                            <figcaption style="text-align: right;" class="uk-overlay-panel uk-overlay-background uk-overlay-top uk-overlay-slide-top">
+                                <button class="uk-button uk-button-primary"><i class="uk-icon-laptop"> MAS INFORMACIÓN</i></button>
+                            </figcaption>
+                        </a>
+                    </li>
+                    <li class="uk-overlay uk-overlay-hover">
+                        <img src="../images/bn3.png" style="width: 20%; height: 10px;">
+                        <a href="www.saitel.ec">
+                            <figcaption style="text-align: right;" class="uk-overlay-panel uk-overlay-background uk-overlay-top uk-overlay-slide-top">
+                                <button class="uk-button uk-button-primary"><i class="uk-icon-laptop"> MAS INFORMACIÓN</i></button>
+                            </figcaption>
+                        </a>
+                    </li>
+                </ul>
+                <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-previous uk-text-primary" data-uk-slideshow-item="previous"></a>
+                <a href="" class="uk-slidenav uk-slidenav-contrast uk-slidenav-next uk-text-primary" data-uk-slideshow-item="next"></a>
+                <ul class="uk-dotnav uk-dotnav-contrast uk-position-bottom uk-flex-right">
+                    <li data-uk-slideshow-item="0" class="uk-active" class="uk-text-primary"><a href=""></a></li>
+                    <li data-uk-slideshow-item="1"><a href="" class="uk-text-primary"></a></li>
+                    <li data-uk-slideshow-item="2"><a href="" class="uk-text-primary"></a></li>
+                </ul>
+            </div>
+            <div style="background: rgba(0, 85, 151, 0.9);"><b class="uk-text-primary">_</b> </div>
+            <!--DATOS-->
+            <div class="uk-container uk-container-center uk-margin-top uk-margin-large-bottom" >
+                <div class="uk-grid uk-scrollspy-init-inview" data-uk-grid-margin data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300,repeat: true}">
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-box">
+                            <h2 style="text-align: center">Pichincha</h2>
+                            <div class="uk-panel-teaser">
+                                <img class="uk-container-center uk-border-rounded" src="../images/pichincha.jpg" width="350" height="200">
+                                <a data-uk-modal="{target:'#modalPichincha'}"><div class="uk-panel-badge uk-badge">Mas Información</div></a>
+                                <hr>
+                            </div>
+                            <p style="text-align: justify">El Quinche-Ayora-Cajas-Guayllabamba.</p>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-box">
+                            <h2 style="text-align: center">Imbabura</h2>
+                            <div class="uk-panel-teaser">
+                                <img class="uk-container-center uk-border-rounded" src="../images/imbabura.jpg" width="350" height="200">
+                                <a data-uk-modal="{target:'#modalImbabura'}"><div class="uk-panel-badge uk-badge">Mas Información</div></a>
+                                <hr>
+                            </div>
+                            <p style="text-align: justify">San Pablo-Iluman-Apuela-Chaltura.</p>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-box">
+                            <h2 style="text-align: center">Carchi</h2>
+                            <div class="uk-panel-teaser">
+                                <img class="uk-container-center uk-border-rounded" src="../images/carchi.jpg" width="350" height="200">
+                                <a data-uk-modal="{target:'#modalCarchi'}"><div class="uk-panel-badge uk-badge">Mas Información</div></a>
+                                <hr>
+                            </div>
+                            <p style="text-align: justify">Barrio la Ensillada-Pioter-La Cofradía.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid uk-scrollspy-init-inview" data-uk-grid-margin data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:300,repeat: true}">
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-box">
+                            <h2 style="text-align: center">Sucumbios</h2>
+                            <div class="uk-panel-teaser">
+                                <img class="uk-container-center uk-border-rounded" src="../images/sucumbios.jpg" width="350" height="200">
+                                <a data-uk-modal="{target:'#modalSucumbios'}"><div class="uk-panel-badge uk-badge">Mas Información</div></a>
+                                <hr>
+                            </div>
+                            <p style="text-align: justify">Shushufindi-Playón-Cocha Seca.</p>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-box">
+                            <h2 style="text-align: center">Orellana</h2>
+                            <div class="uk-panel-teaser">
+                                <img class="uk-container-center uk-border-rounded" src="../images/orellana.jpg" width="350" height="200">
+                                <a data-uk-modal="{target:'#modalOrellana'}"><div class="uk-panel-badge uk-badge">Mas Información</div></a>
+                                <hr>
+                            </div>
+                            <p style="text-align: justify">Loreto-Francisco de Orellana-Guamayacu.</p>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-box">
+                            <h2 style="text-align: center">Regional Costa Centro</h2>
+                            <div class="uk-panel-teaser">
+                                <img class="uk-container-center uk-border-rounded" src="../images/chone.jpg" width="350" height="200">
+                                <a data-uk-modal="{target:'#modalChone'}"><div class="uk-panel-badge uk-badge">Mas Información</div></a>
+                                <hr>
+                            </div>
+                            <p style="text-align: justify">Chone, Tosagua, Calceta.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="uk-grid uk-scrollspy-init-inview" data-uk-grid-margin data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300,repeat: true}">
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-box">
+                            <h2 style="text-align: center">Latacunga</h2>
+                            <div class="uk-panel-teaser">
+                                <img class="uk-container-center uk-border-rounded" src="../images/latacunga.jpg" width="350" height="200">
+                                <a data-uk-modal="{target:'#modalLatacunga'}"><div class="uk-panel-badge uk-badge">Mas Información</div></a>
+                                <hr>
+                            </div>
+                            <p style="text-align: justify">Cantón Latacunga, Cantón la Maná.</p>
+                        </div>
+                    </div>
+                    <div class="uk-width-medium-1-3">
+                        <div class="uk-panel uk-panel-box">
+                            <h2 style="text-align: center">Esmeraldas</h2>
+                            <div class="uk-panel-teaser">
+                                <img class="uk-container-center uk-border-rounded" src="../images/esmeraldas.jpg" width="350" height="200">
+                                <a data-uk-modal="{target:'#modalEsmeraldas'}"><div class="uk-panel-badge uk-badge">Mas Información</div></a>
+                                <hr>
+                            </div>
+                            <p style="text-align: justify">Cantón Esmeraldas, Cantón Eloy Alfaro.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--MODALS-->
+                <div id="modalPichincha" class="uk-modal">
+                    <div class="uk-modal-dialog">
+                        <strong>CANTON QUITO</strong>
+                        <br>El Quinche.<br>Guayllabamba.<br>Calderón.<br>Carapungo.<br>San Juan.<br>Llano Chico.<br>Llano Grande.<br>La Bota.<br>Cumbaya.<br>Tumbaco.<br>Pifo.<br>Zabala<br>Checa.<br>Oyacoto.<br>San Miguel de Calderon.
+                        <hr>
+
+                        <strong>CANTON CAYAMBE</strong>
+                        <br>Toda la Ciudad de Cayambe.<br>Guachalá.<br>Ciniburo.<br>Carrera.<br>Pinguilmí.<br>Otón.<br>Ascázubi.<br>Santa Clara.<br>Cangahua.<br>Ayora.<br>Juan Montalvo.<br>Oledo.<br>Pesillo.<br>Cariacu.<br>Paquiestancia.<br>Turucucho.<br>El Quinche.
+                        <hr>
+
+                        <strong>CANTON TABACUNDO</strong>
+                        <br>Toda la Ciudad.<br>Tupigachi.<br>Tocachi.<br>Tomalón.<br>La Esperanza de Tabacundo.<br>Cajas.<br>El Prado.<br>Malchinguí.
+
+                        <div class="uk-modal-caption">
+                            Pichincha
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modalImbabura" class="uk-modal">
+                    <div class="uk-modal-dialog">
+                        <strong>CANTÓN OTAVALO</strong>
+                        <br>Toda la Ciudad.<br>Toda la Cuenca del Lago San Pablo.<br>En las Parroquias de Gonzáles Suárez<br>San Pablo<br>Eugenio Espejo<br>Miguel Egas<br>Ilumán<br>Selva Alegre<br>Quichinche
+                        <hr>
+
+                        <strong>Canton Cotacachi</strong>
+                        <br>Toda la Ciudad<br>Zona de Intag<br>Apuela.<br>Cuellaje.<br>García Moreno.<br>Selva Alegre.<br>El Chontal.<br>La Madgalena.<br>El Corazón.<br>Rio Verde.<br>Cielo Verde.<br>Pacto.<br>Gualea.<br>Gualea Cruz.<br>El Provenir.<br>Parroquias de Quiroga.
+                        <hr>
+
+                        <strong>Canton Antonio Ante</strong>
+                        <br>Toda la Ciudad de Atuntaqui.<br>Andrade Marín.<br>San Roque.<br>Chaltura.<br>Natabuela.
+                        <hr>
+
+                        <strong>Canton Urcuqui</strong>
+                        <br>Toda la Ciudad.<br>San Blas.<br>Tumbabiro.<br>Pablo Arenas.
+                        <hr>
+
+                        <strong>Canton Ibarra</strong>
+                        <br>Toda la Ciudad de Ibarra.<br>Caranqui.<br>El Milagro.<br>San Antonio.<br>La Esperanza.<br>Chirihuasi.<br>La Rinconada.<br>Zuleta.<br>Angochagua.<br>Toda la Cuenca del Valle del Chota.<br>El Juncal.<br>Carpuela.<br>El Chota.<br>Salinas.
+                        <hr>
+
+                        <strong>Canton Pimampiro</strong>
+                        <br>Toda la Ciudad.<br>Paragachi.<br>El Alisal.
+                        <hr>
+
+                        <div class="uk-modal-caption">
+                            Imbabura
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modalCarchi" class="uk-modal">
+                    <div class="uk-modal-dialog">
+                        <strong>Canton Tulcán</strong>
+                        <br>Toda la Ciudad de Tulcán.<br>Barrio la Ensillada.<br>Comunidad de Chapués.<br>Ciudadela Tajamar Regalado<br>Ciudadela Padre Ponce - Sector las 4 Esquinas<br>Barrio Taques<br>Parroquia Julio Andrade<br>La Cofradía<br>Santa Martha de Cuba<br>Parroquia Tufiño<br>La Playa<br>Pioter<br>
+                        <hr>
+
+                        <strong>Canton Montufar</strong>
+                        <br>Toda la Ciudad de San Gabriel<br>Parroquia la Paz<br>Parroquia Fernández Salvador.<br>Parroquia Chitán Navarrete.<br>El Chamizo.<br>La Delicia.<br>Chután Alto.<br>Chután Bajo.<br>San Luis.<br>El Capulí.<br>Santa Rosa.<br>
+                        <hr>
+
+                        <strong>Canton Huaca</strong>
+                        <br>Toda la Ciudad de Huaca.<br>La Mariscal.<br>La Calera.<br>
+                        <hr>
+
+                        <strong>Canton El Angel</strong>
+                        <hr>
+
+                        <strong>Canton Mira</strong>
+                        <hr>
+
+                        <strong>Canton San Isidro</strong>
+
+                        <hr>
+                        <strong>Canton La Libertad</strong>
+
+                        <div class="uk-modal-caption">
+                            Carchi
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modalSucumbios" class="uk-modal">
+                    <div class="uk-modal-dialog">
+                        <br>Toda la Ciudad de Shushufindi.<br>Playon.<br>Santa Bárbara.<br>Cocha Seca<br>El Mirador<br>Llurimagua<br>Centro Poblado<br>Luis Vargas Torres
+                        <hr>
+
+                        <strong>Canton Joya de los Sachas</strong>
+                        <br>Toda la Ciudad.<br>
+
+                        <div class="uk-modal-caption">
+                            Sucumbios
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modalOrellana" class="uk-modal">
+                    <div class="uk-modal-dialog">
+                        <br>Toda la Ciudad de Loreto.<br>Toda la Ciudad de Francisco de Orellana.<br>Toda la Ciudad de la Joya de los Sachas.
+                        <hr>
+
+                        <strong>Zonas Rurales</strong>
+                        <br>Huataracu.<br>Guamayacu.<br>Yanayacu.<br>La Libertad.<br>La Parker.<br>San Carlos.<br>La Pimampiro.<br>La Unión Milagreña.<br>Enocanqui.<br>Lago San Pedro.<br>Tres de Noviembre.<br>Las Minas.<br>San Sebastián del Coca.<br>El Dorado.<br>Nuevo Paraiso.<br>Huataracu.
+                        <hr>
+
+                        <strong>Cantón Joya de los Sachas</strong>
+                        <br>Los Laureles.<br>Valladolid.<br>25 de Diciembre.<br>Porvenir.<br>3 de Noviembre.<br>Lago San Pedro.<br>San Carlos.<br>24 de Noviembre.<br>Pimampiro.<br>10 de Agosto.<br>Unión Milagreña.<br>Enokanqui.
+                        <hr>
+
+                        <div class="uk-modal-caption">
+                            Orellana
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modalChone" class="uk-modal">
+                    <div class="uk-modal-dialog">
+                        <br>Chone.<br>Tosagua.<br>Calceta.<br>Canuto.<br>Convento.<br>Bahia de Caraquez.<br>Quiroga.<br>San Vicente
+
+                        <div class="uk-modal-caption">
+                            Chone
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modalLatacunga" class="uk-modal">
+                    <div class="uk-modal-dialog">
+                        <br>Cantón Latacunga.<br>Cantón La Maná.<br>Cantón Pangua.<br>Cantón Pujilí.<br>Cantón Salcedo.<br>Cantón Saquisilí.<br>Cantón Sigchos.
+
+                        <div class="uk-modal-caption">
+                            Latacunga
+                        </div>
+                    </div>
+                </div>
+
+                <div id="modalEsmeraldas" class="uk-modal">
+                    <div class="uk-modal-dialog">
+                        <br>Cantón Esmeraldas.<br>Cantón Eloy Alfaro.<br>Cantón Muisne.<br>Cantón Quinindé.<br>Cantón San Lorenzo.<br>Cantón Atacames.<br>Cantón Río Verde.
+
+                        <div class="uk-modal-caption">
+                            Esmeraldas
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="uk-grid uk-scrollspy-init-inview uk-container-center" data-uk-grid-margin data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:300,repeat: true}">
+                    <div class="uk-panel-box uk-panel uk-width-medium-1-1">
+                        <h1>Mapa de Cobertura</h1>
+                        <div id="googleMap" class="uk-responsive-width uk-width-medium-1-1" style="width:1000px; height:600px"></div>
+                    </div>
+                </div>
+                <!--<div class="uk-grid" data-uk-grid-margin>
+                    <div class="uk-width-3-4">
+                        <h4>como va a ser posible</h4>
+                    </div>
+                    <div class="uk-width-1-4">
+                        <div class="fb-like"></div>
+                    </div>
+                </div>-->
+            </div>
+            <div style="background: rgba(0, 85, 151, 0.9);" class="uk-block uk-contrast uk-scrollspy-init-inview" data-uk-scrollspy="{cls:'uk-animation-slide-top',delay:100,repeat: true}">
+            <!--238, 165, 72, 0.9<div class="uk-block uk-contrast uk-scrollspy-init-inview uk-block-primary" data-uk-scrollspy="{cls:'uk-animation-slide-right',delay:100,repeat: true}">-->
+                <div class="uk-container uk-container-center">
+                    <div class="uk-grid uk-grid-match" data-uk-grid-margin>
+                        <div class="uk-width-medium-1-3">
+                            <div class="uk-panel">
+                                <h3>AYUDA AL CLIENTE</h3>
+                                <hr>
+                                <a href="../docs/verificacionContratado.pdf" target="_blank" class="uk-text-small uk-text-contrast">Guía para Verificación de Ancho de Banda Contratado</a><br>
+                                <a href="glosarioTerminos.html" class="uk-text-small uk-text-contrast">Glosario de Términos</a><br>
+                                <a href="medidorVelocidad.html" class="uk-text-small uk-text-contrast">Test de Velocidad</a><br>
+                                <a href="reclamos.html" class="uk-text-small uk-text-contrast">Reclamos</a><br>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-3">
+                            <div class="uk-panel">
+                                <h3>ENLACES GUBERNAMENTALES</h3>
+                                <hr>
+                                <a href="http://www.arcotel.gob.ec/" class="uk-text-small uk-text-contrast" target="_blank">ARCOTEL</a><br>
+                            </div>
+                        </div>
+                        <div class="uk-width-medium-1-3">
+                            <div class="uk-panel">
+                                <h3>INFORMACIÓN ADICIONAL</h3>
+                                <hr>
+                                <a href="capacidadInternacional.html" class="uk-text-small uk-text-contrast">Capacidad Contratada</a><br>
+                                <a href="../docs/reglamento_abonados.pdf" class="uk-text-small uk-text-contrast" target="_blank">Reglamento de Abonados</a><br>
+                                <a href="../docs/norma_sva.pdf" class="uk-text-small uk-text-contrast" target="_blank">Reglamento Norma SVA</a><br>
+                                <a href="mejorar.html" class="uk-text-small uk-text-contrast">Ayudanos a Mejorar</a><br>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="uk-container-center uk-width-medium-1-3">
+                        <img src="../images/logosfondo.png" width="150" height="100">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--<div class="fb-post" data-href="https://www.facebook.com/photo.php?fbid=1607266319561188&l=04eab0ede6" data-width="500"></div>-->
+    </body>
+</html>

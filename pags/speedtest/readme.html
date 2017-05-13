@@ -1,0 +1,228 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Ookla NetGauge Readme</title>
+	<style type="text/css">
+	.kb-log{
+		overflow: hidden;
+		padding: 10px;
+		border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+	font-family: Courier, "Courier New", monospace;
+	background-color: #000000;
+	color: #ffffff;
+
+}
+.kb-code.inline{
+	padding: 0 3px 2px;
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #333333;
+  -webkit-border-radius: 3px;
+     -moz-border-radius: 3px;
+          border-radius: 3px;
+  display: inline-block;
+	white-space: nowrap;
+  background-color: #f7f7f9;
+  border: 1px solid #e1e1e8;
+}
+
+		article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}
+		audio,canvas,video{display:inline;zoom:1;}
+		audio:not([controls]){display:none;height:0;}
+		[hidden]{display:none;}
+		html{font-size:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}
+		html,button,input,select,textarea{font-family:sans-serif;}
+		a:focus{outline:thin dotted;}
+		a:active,a:hover{outline:0;}
+		h1{font-size:2em;margin:.67em 0;}
+		h2{font-size:1.5em;margin:.83em 0;}
+		h3{font-size:1.17em;margin:1em 0;}
+		h4{font-size:1em;margin:1.33em 0;}
+		h5{font-size:.83em;margin:1.67em 0;}
+		h6{font-size:.75em;margin:2.33em 0;}
+		abbr[title]{border-bottom:1px dotted;}
+		b,strong{font-weight:700;}
+		blockquote{margin:1em 40px;}
+		dfn{font-style:italic;}
+		mark{background:#ff0;color:#000;}
+		code,kbd,pre,samp{font-family:monospace, serif;_font-family:'courier new', monospace;font-size:1em;}
+		pre{white-space:pre-wrap;word-wrap:break-word;}
+		q{quotes:none;}
+		q:before,q:after{content:none;}
+		small{font-size:80%;}
+		sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}
+		sup{top:-.5em;}
+		sub{bottom:-.25em;}
+		dd{margin:0 0 0 40px;}
+		menu,ol,ul{padding:0 0 0 40px;}
+		nav ul,nav ol{list-style:none;list-style-image:none;}
+		img{border:0;-ms-interpolation-mode:bicubic;}
+		svg:not(:root){overflow:hidden;}
+		fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}
+		legend{border:0;white-space:normal;margin-left:-7px;padding:0;}
+		button,input,select,textarea{font-size:100%;vertical-align:middle;margin:0;}
+		button,input{line-height:normal;}
+		button,html input[type=button],/* 1 */ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;overflow:visible;}
+		button[disabled],input[disabled]{cursor:default;}
+		input[type=checkbox],input[type=radio]{box-sizing:border-box;height:13px;width:13px;padding:0;}
+		input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}
+		input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}
+		button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+		textarea{overflow:auto;vertical-align:top;}
+		table{border-collapse:collapse;border-spacing:0;}
+		body,figure,form{margin:0;}
+		p,pre,dl,menu,ol,ul{margin:1em 0;}
+
+		html, body { line-height: 1.4; color: #333; font-size: 16px; }
+		a, a:visited { color: #33f; }
+		a:hover, a:active, a:focus { color: #f33; }
+		div.content { max-width: 800px; margin: 16px auto 64px; position: relative; }
+		p.footer { margin-top: 64px; font-size: 11px; text-align: center; }
+		h1, h2, h3 { text-align: center; }
+		h1 { clear: both; font-size: 40px; margin-bottom: 0; }
+		h2 { font-size: 16px; margin: 8px 0; }
+		h3 { font-size: 24px; margin: 13px 0; }
+		h4 { font-size: 20px; margin: 16px 0; }
+		h5 { font-size: 16px; display: inline; }
+		table, td, th { border: 1px solid #ccc; }
+		table { margin: 32px 0; }
+		td, th { padding: 12px; }
+		code, pre { background-color: #ddd; font-size: 14px; padding: 0 3px; color: #000; }
+		pre { font-size: 12px; }
+		div.logo { float: left; width: 300px; margin-bottom: 16px; }
+		div.expire { float: right; width: 50%; font-size: 13px; padding: 20px 6px; border: 1px solid #f05223; text-align: center; background: #fee; margin: 0 auto 16px; }
+		div.expire p { margin: 0; }
+		div.section { border-bottom: 1px solid #ddd; padding-bottom: 16px; margin-bottom: 16px; }
+		li { margin: 16px 0; }
+		ol ol { list-style-type: lower-alpha; }
+
+		@media print {
+			html { font-size: 8pt; }
+			div.content { max-width: 100%; margin: 0; }
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="content">
+
+		<div class="logo">
+						<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 width="214.039px" height="67.906px" viewBox="0 0 214.039 67.906" enable-background="new 0 0 214.039 67.906"
+				 xml:space="preserve">
+				<polygon fill="#827A6D" points="138.857,66.801 105.081,33.023 105.081,38.984 132.898,66.801 "/>
+				<polygon fill="#F05223" points="130.373,66.801 105.081,41.51 105.081,47.543 124.339,66.801 "/>
+				<polygon fill="#ECB42D" points="121.742,66.801 105.081,50.141 105.081,56.102 115.785,66.801 "/>
+				<polygon fill="#F05223" points="138.125,23.059 138.125,17.102 114.804,40.422 117.783,43.398 "/>
+				<polygon fill="#827A6D" points="146.666,0 110.521,36.143 113.503,39.123 146.666,5.961 "/>
+				<polygon fill="#ECB42D" points="138.111,0 106.243,31.864 109.224,34.846 138.111,5.961 "/>
+				<path fill="#827A6D" d="M39.305,44.92c0-9.578-6.49-17.427-16.505-17.427c-10.01,0-16.496,7.849-16.496,17.427
+					S12.79,62.348,22.8,62.348C32.815,62.348,39.305,54.498,39.305,44.92 M0,44.92c0-12.976,9.453-22.99,22.801-22.99
+					c13.35,0,22.81,10.015,22.81,22.99c0,12.977-9.459,22.986-22.81,22.986C9.453,67.906,0,57.896,0,44.92"/>
+				<path fill="#827A6D" d="M87.53,44.92c0-9.578-6.489-17.427-16.5-17.427c-10.012,0-16.502,7.849-16.502,17.427
+					s6.49,17.428,16.502,17.428C81.041,62.348,87.53,54.498,87.53,44.92 M48.224,44.92c0-12.976,9.457-22.99,22.807-22.99
+					c13.349,0,22.806,10.015,22.806,22.99c0,12.977-9.457,22.986-22.806,22.986C57.681,67.906,48.224,57.896,48.224,44.92"/>
+				<polygon fill="#827A6D" points="140.722,23.041 146.658,23.041 146.658,61.234 168.435,61.234 168.435,66.799 140.722,66.799 "/>
+				<polygon fill="#827A6D" points="191.796,30.705 191.673,30.705 176.966,66.799 170.296,66.799 188.718,23.041 195.148,23.041
+					213.177,66.799 206.503,66.799 "/>
+				<rect x="97.034" y="23.045" fill="#827A6D" width="6.007" height="43.756"/>
+				<g>
+					<path fill="#827A6D" d="M211.08,23.032c0.496,0,0.982,0.127,1.455,0.381c0.475,0.256,0.844,0.621,1.107,1.097
+						c0.264,0.475,0.396,0.971,0.396,1.483c0,0.512-0.131,1.002-0.391,1.473c-0.262,0.472-0.625,0.837-1.098,1.097
+						c-0.469,0.262-0.959,0.391-1.473,0.391c-0.512,0-1.004-0.129-1.473-0.391c-0.473-0.26-0.836-0.625-1.1-1.097
+						c-0.262-0.471-0.393-0.961-0.393-1.473c0-0.515,0.133-1.011,0.396-1.483c0.266-0.475,0.637-0.841,1.109-1.097
+						C210.097,23.159,210.583,23.032,211.08,23.032z M211.08,23.521c-0.416,0-0.82,0.105-1.215,0.32
+						c-0.393,0.213-0.701,0.518-0.924,0.914s-0.334,0.809-0.334,1.236c0,0.427,0.109,0.836,0.328,1.227s0.523,0.697,0.916,0.914
+						c0.393,0.219,0.803,0.328,1.229,0.328s0.836-0.109,1.229-0.328c0.395-0.217,0.697-0.523,0.914-0.914
+						c0.219-0.391,0.326-0.799,0.326-1.227s-0.109-0.84-0.332-1.236c-0.221-0.396-0.527-0.701-0.924-0.914
+						C211.898,23.627,211.494,23.521,211.08,23.521z M209.781,27.629v-3.186h1.096c0.373,0,0.646,0.029,0.812,0.088
+						c0.168,0.059,0.301,0.162,0.398,0.309c0.102,0.147,0.15,0.301,0.15,0.467c0,0.232-0.084,0.437-0.25,0.609
+						c-0.166,0.172-0.387,0.268-0.66,0.289c0.111,0.047,0.201,0.104,0.27,0.168c0.131,0.127,0.285,0.338,0.473,0.633l0.391,0.623h-0.629
+						l-0.281-0.502c-0.225-0.395-0.4-0.643-0.537-0.742c-0.094-0.072-0.232-0.109-0.412-0.109h-0.303v1.354L209.781,27.629
+						L209.781,27.629z M210.294,25.836h0.625c0.297,0,0.502-0.045,0.609-0.133c0.109-0.09,0.164-0.207,0.164-0.354
+						c0-0.095-0.027-0.179-0.08-0.254c-0.053-0.074-0.125-0.13-0.217-0.166c-0.094-0.037-0.266-0.056-0.516-0.056h-0.586V25.836
+						L210.294,25.836z"/>
+				</g>
+			</svg>
+		</div>
+
+		<div class="expire">
+			<p>This Trial Version will expire on <strong class="expire-date">April 5, 2017</strong>.</p>
+			<p>Need a longer trial period? No problem, simply <a href="https://www.ookla.com/order?default=inquire" target="_blank">inquire</a>.</p>
+		</div>
+
+		<h1>NetGauge<sup>&reg;</sup></h1>
+		<h2>Trial Version</h2>
+
+
+			<h3>Quick Installation Guide</h3>
+			<p>Thank you for trying our fully-functional Trial Version of the widely acclaimed Ookla NetGauge. You will find out why we are the de facto global standard in primary network metrics, providing accurate and reliable results since 1999.
+			<p>Over two-thirds of the world's ISPs count on Ookla and millions of their customers test cable, DSL, wireless, or satellite connections each and every day using this technology. People around the world use <a href="http://www.speedtest.net">Speedtest.net</a>, on the Web or natively on their Android, iOS, or Windows Phone mobile device.</p></p>
+
+			<h4>Getting Started</h4>
+			<p>To get started, we ask that you review the <a href="http://www.ookla.com/support/a24886386/NetGauge-Installation-Overview">Installation Overview</a> located on Ookla.com’s Support Page. This guide gives a broad overview of what will be needed to install the server daemon and set up NetGauge.</p>
+
+			<p>After reviewing the Installation Overview, please visit the <a href="http://www.ookla.com/support/a22699676/NetGauge-Client-Installation-Configuration">Client Installation &amp; Configuration</a> page which will walk you through the installation process and give instruction for how to access your web directory which is to where the unzipped files you received will need to be extracted. </p>
+
+			<h4>Installation</h4>
+			<p>After extracting the files to your root web directory, you will need to set up and configure the server daemon. </p>
+
+			<p>There are two ways to do this: Manual Installation OR using a Shell Script to install the daemon to a specific folder.</p>
+
+			<h5>Manual Install:</h5>
+			<p>Please visit the <a href="http://www.ookla.com/support/a23310533/">Manual Install</a> instructions found on the Ookla Support Pages and you will find step-by-step instructions to set up the daemon using a terminal. These instructions apply to both Windows and Linux/Unix Servers.</p>
+
+			<h5>Using the Shell Script:</h5>
+			<p>The shell script instructions are divided between <a href="http://www.ookla.com/support/a23019153/NetGauge-Windows-Daemon-Installation-Registered">Windows</a> and <a href="http://www.ookla.com/support/a22705918/NetGauge-Linux-Unix-Server-Daemon-Installation">Linux/Unix</a> Server installation. To automatically start the daemon at system boot on Linux/Unix servers, please see the <a href="http://www.ookla.com/support/a23471557/NetGauge-Linux-Startup-Script-Options">Linux/Unix Startup Script</a> instructions.</p>
+
+			<p>
+				If the Ookla Server Daemon is installed on a public facing server, use the <a href="http://www.ookla.com/hosttester.php">Ookla Server Tester</a> to verify your installation. Full instrunctions for the Ookla Server Tester can be found <a href="http://www.ookla.com/support/a88674096/Using-the-Ookla-Server-Tester">here</a>.
+			</p>
+			<p>Once running you should be able to telnet into port 8080 on the server from a testing client machine. This will require the telnet client being installed. <a href="https://technet.microsoft.com/en-us/library/cc771275(v=ws.10).aspx">Telnet is not enabled by default in Windows Vista/7/8</a>. Open another command prompt window, using the example below (lines in bold are case sensitive and must be typed):</p>
+
+			<pre class="kb-log">
+$ <strong>telnet myserver.mydomain.com 8080</strong>
+Trying 123.45.67.89...
+Connected to myserver.mydomain.com.
+Escape character is '^]'.
+<strong>HI</strong>
+HELLO 2.3 2014-10-17.02
+<strong>QUIT</strong>
+Connection closed by foreign host.</pre>
+
+			<p>The next step is to go back into the folder where you placed the server contents and you will see the daemon configuration file called OoklaServer.properties. Edit this in a plain text editor such as Notepad (not Wordpad) if you require adjusting the port(s) used by NetGauge.</p>
+
+			<h4>Client Configuration</h4>
+			<p>First, navigate to the root client folder from step 1 and open settings.xml in a plain text editor such as Notepad (not Wordpad). Next, adjust the <span class="kb-code inline">host="speedtest.mycompany.com:8080"</span> portion of the method line to the name of the host where you have installed the server daemon. Using the example speedtest.mycompany.com, the final line would then look like:</p>
+
+			<pre class="kb-log">&lt;method type=”tcp” host=”speedtest.mycompany.com:8080”/&gt;</pre>
+
+			<p>Note: If you decided to use a custom port for the server daemon, be sure to adjust the port used in the setting.xml file. For reference, <a href="http://www.speedtest.net">Speedtest.net</a> also uses 8080.</p>
+
+			<h4>Installation Complete!</h4>
+			<p>Visit the particular instance you have installed by entering the URL in a Web Browser. The example as shown above: http://speedtest.mycompany.com/index.html, replacing the domain name and path to match your licensed environment.</p>
+
+			<p>Depending on the range of speeds being tested, you may want to adjust the default settings. You can find definitions and default values for the NetGauge TCP test in the table <a href="http://www.ookla.com/support/a22699676/NetGauge-Client-Installation-Configuration">here</a>.</p>
+
+			<h4>How to Order</h4>
+			<p>Includes Support, Maintenance, Version Updates (3.xx), and more...</p>
+
+			<p>Ready to order? Please place your order <a href="https://www.ookla.com/inquire-order">online</a>. In most cases the same Account Executive who delivered your Trial Package will contact you immediately. Your Ookla AE is your primary point of contact for everything! They are technically-minded and service-oriented. Ookla looks forward to serving you further, soon.</p>
+
+			<h4>Support</h4>
+			<p>Our support solutions are easy to use and cost-effective due to our investments in convenient “self-service” options. We kindly ask that you please carefully consult our documentation before contacting us for help. That said, we are always close by if you need us and our staff is always eager to see how we can improve our service automation.</p>
+
+			<p>Support service is available during the Trial, and then anytime as one of our highly valued and distinguished Clients. In order for us to best provide support, we ask that you please direct all questions first to our powerful, extensive and convenient <a href="http://www.ookla.com/support">Knowledge Base</a> that we invest in heavily along with many other online resources. Please help us improve by providing feedback regarding our support options directly within them.</p>
+
+
+		<p class="footer">All contents of this Zip archive are &copy; 2013 Ookla</p>
+
+	</div>
+
+</body>
+</html>
